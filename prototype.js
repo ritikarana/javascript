@@ -1,16 +1,15 @@
+function User() {}
+User.prototype.name = "Jake";
+const a = new User();
+console.log(a.name);
 
-function User() { }
-User.prototype.name = 1
-const a = new User()
-console.log(a.name)
+User.prototype.name = "James";
+const b = new User();
+console.log(a.name);
+console.log(b.name);
 
-User.prototype.name = 2
-const b = new User()
-console.log(a.name)
-console.log(b.name)
-
-User.prototype = {name: 3}
-const c = new User()
-console.log(a.name)
-console.log(b.name)
-console.log(c.name)
+User.prototype = { name: "Jake James" };
+const c = new User();
+console.log(a.name);
+console.log(b.name);
+console.log(c.name);
